@@ -1,30 +1,25 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
+import SearchBar from '../components/SearchBar.jsx';
+
 
 export default class App extends Component {
 	render() {
 		return (
 			<div>
 				<aside className="ui left fixed vertical inverted menu">
-					<header className="item">
-						<Link to="\"><img className="ui small image" src="img/logo.png" /></Link>
-					</header>
-					<div className="item">
-						<h4 className="ui inverted header">Tags</h4>
-						<div className="menu">
-							<a href="#" className="item">Tag1</a>
-						</div>
-					</div>
-				</aside>
+                    <header className="item">
+                        <Link to="\"><img className="ui small image centered" src="img/logo.png" /></Link>
+                    </header>
+                    <div className="item">
+                        <h4 className="ui inverted header">Tags</h4>
+                        <div className="menu">
+                            <a href="#" className="item">Tag1</a>
+                        </div>
+                    </div>
+                </aside>
 				<div className="ui main-content">
-					<select className="ui search dropdown" multiple="">
-						<option value="">Search tags</option>
-						<option value="AL">Alabama</option>
-						<option value="AK">Alaska</option>
-						<option value="AZ">Arizona</option>
-						<option value="AR">Arkansas</option>
-						<option value="CA">California</option>
-					</select>
+					<SearchBar />
 					<div className="ui cards">
 						<div className="ui card">
 							<div className="content">
