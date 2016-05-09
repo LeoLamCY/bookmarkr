@@ -10,15 +10,16 @@ import { Bookmarks } from '/imports/api/bookmarks.js';
 export default class App extends Component {
 	constructor(props) {
         super(props);
-        console.log(props.bookmarks);
     }
+
 	render() {
+		const { bookmarks } = this.props;
 		return (
 			<div>
 				<Sidebar />
 				<div className="ui main-content">
 					<SearchBar />
-					<Cards bookmarks={ this.props.bookmarks }/>
+					<Cards bookmarks={ bookmarks }/>
 				</div>
 				<Footer />
 			</div>
