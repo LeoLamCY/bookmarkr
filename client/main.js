@@ -6,4 +6,5 @@ Meteor.startup(() => {
 	render(renderRoutes(), document.getElementById('app'));
 
 	$("select").dropdown();
+    $('.ui.modal').modal('show');
 });

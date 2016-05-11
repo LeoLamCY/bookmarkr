@@ -13,13 +13,30 @@ export default class App extends Component {
     }
 
 	render() {
-		const { bookmarks } = this.props;
 		return (
-			<div>
+			<div className="wrapper">
 				<Sidebar />
 				<div className="ui main-content">
 					<SearchBar />
-					<Cards bookmarks={ bookmarks }/>
+					<Cards bookmarks={ this.props.bookmarks }/>
+					<div className="ui modal">
+				  <i className="close icon"></i>
+				  <div className="header">
+				    Modal Title
+				  </div>
+				  <div className="image content">
+				    <div className="image">
+				      An image can appear on left or an icon
+				    </div>
+				    <div className="description">
+				      A description can appear on the right
+				    </div>
+				  </div>
+				  <div className="actions">
+				    <div className="ui button">Cancel</div>
+				    <div className="ui button">OK</div>
+				  </div>
+				</div>
 				</div>
 				<Footer />
 			</div>
