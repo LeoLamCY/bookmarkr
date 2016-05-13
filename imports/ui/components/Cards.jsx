@@ -10,7 +10,7 @@ export default class Cards extends Component {
         return(
             <div className="ui cards">
             { this.props.bookmarks.map( (bookmark) =>
-                    <Card name={ bookmark.text } key={ bookmark._id}/>
+                    <Card url={ bookmark.url } tags={ bookmark.tags } key={ bookmark._id}/>
                 )
             }
             </div>

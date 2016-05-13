@@ -1,18 +1,45 @@
 import React, { Component, PropTypes } from 'react';
+import ReactDOM from 'react-dom';
 import { Link } from 'react-router';
 import SearchBar from '../components/SearchBar.jsx';
 import Sidebar from '../components/Sidebar.jsx';
 import Cards from '../components/Cards.jsx';
 import Footer from '../components/Footer.jsx';
+import classNames from 'classnames';
 
 import { Bookmarks } from '/imports/api/bookmarks.js';
 
-export default class App extends Component {
+export default class App extends React.Component {
 	constructor(props) {
         super(props);
+    	this.onAddBookmarkFormSubmit = this.onAddBookmarkFormSubmit.bind(this);
+
+    	this.state = {
+    		submitSuccess: false,
+    	}
+    }
+
+    onAddBookmarkFormSubmit(event) {
+    	event.preventDefault();
+    	let url = ReactDOM.findDOMNode(this.refs.url).value.trim();
+    	let tags = ReactDOM.findDOMNode(this.refs.tags).value.trim();
+    	Bookmarks.insert({
+			url,
+			tags,
+			created: new Date(),
+    	}, (err, id) => {
+    		console.log(id);
+    		id == null ? this.state.submitSuccess = false : this.state.submitSuccess = true;
+    		console.log(this.state.submitSuccess);
+    	});
     }
 
 	render() {
+		var formSuccessClass = classNames({
+			'ui': true,
+			'form': true,
+			'success': this.state.submitSuccess,
+		})
 		return (
 			<div className="wrapper">
 				<Sidebar />
@@ -20,23 +47,25 @@ export default class App extends Component {
 					<SearchBar />
 					<Cards bookmarks={ this.props.bookmarks }/>
 					<div className="ui modal">
-				  <i className="close icon"></i>
-				  <div className="header">
-				    Modal Title
-				  </div>
-				  <div className="image content">
-				    <div className="image">
-				      An image can appear on left or an icon
-				    </div>
-				    <div className="description">
-				      A description can appear on the right
-				    </div>
-				  </div>
-				  <div className="actions">
-				    <div className="ui button">Cancel</div>
-				    <div className="ui button">OK</div>
-				  </div>
-				</div>
+					  <i className="close icon"></i>
+					  <div className="header">
+					    New Bookmark
+					  </div>
+					  <div className="content">
+					    <form className={ formSuccessClass } onSubmit={ this.onAddBookmarkFormSubmit }>
+						  <div className="required field">
+						    <input type="text" name="url" ref="url" placeholder="URL" />
+						  </div>
+						  <div className="required field">
+						    <input type="text" name="tags" ref="tags" placeholder="Tags" />
+						  </div>
+						  <div className="ui success message">
+						    <p>Bookmark added.</p>
+						  </div>
+						  <button className="ui button" type="submit">Add</button>
+						</form>
+					  </div>
+					</div>
 				</div>
 				<Footer />
 			</div>

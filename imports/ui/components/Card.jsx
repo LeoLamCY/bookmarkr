@@ -5,12 +5,12 @@ export default class Cards extends Component {
         return(
             <div className="ui card">
                 <div className="content">
-                    <a className="header">{ this.props.name }</a>
+                    <a className="header">{ this.props.url }</a>
                     <div className="meta">
                         <span className="date">Joined in 2013</span>
                     </div>
                     <div className="description">
-                        Kristy is an art director living in New York.
+                        { this.props.tags }
                     </div>
                 </div>
                 <div className="extra content">
