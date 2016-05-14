@@ -23,14 +23,14 @@ export default class App extends React.Component {
     	event.preventDefault();
     	let url = ReactDOM.findDOMNode(this.refs.url).value.trim();
     	let tags = ReactDOM.findDOMNode(this.refs.tags).value.trim();
+    	ReactDOM.findDOMNode(this.refs.url).value = '';
+    	ReactDOM.findDOMNode(this.refs.tags).value = '';
     	Bookmarks.insert({
 			url,
 			tags,
 			created: new Date(),
     	}, (err, id) => {
-    		console.log(id);
     		id == null ? this.setState({'submitSuccess': false}) : this.setState({'submitSuccess': true});
-    		console.log(this.state.submitSuccess);
     	});
     }
 
