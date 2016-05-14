@@ -29,7 +29,7 @@ export default class App extends React.Component {
 			created: new Date(),
     	}, (err, id) => {
     		console.log(id);
-    		id == null ? this.state.submitSuccess = false : this.state.submitSuccess = true;
+    		id == null ? this.setState({'submitSuccess': false}) : this.setState({'submitSuccess': true});
     		console.log(this.state.submitSuccess);
     	});
     }
@@ -39,7 +39,7 @@ export default class App extends React.Component {
 			'ui': true,
 			'form': true,
 			'success': this.state.submitSuccess,
-		})
+		});
 		return (
 			<div className="wrapper">
 				<Sidebar />
