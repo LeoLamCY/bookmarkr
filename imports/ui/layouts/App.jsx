@@ -1,11 +1,12 @@
 import React, { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 import { Link } from 'react-router';
+import classNames from 'classnames';
+
 import SearchBar from '../components/SearchBar.jsx';
 import Sidebar from '../components/Sidebar.jsx';
 import Cards from '../components/Cards.jsx';
 import Footer from '../components/Footer.jsx';
-import classNames from 'classnames';
 
 import { Bookmarks } from '/imports/api/bookmarks.js';
 

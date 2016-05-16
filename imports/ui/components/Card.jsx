@@ -5,19 +5,24 @@ export default class Cards extends Component {
         return(
             <div className="ui card">
                 <div className="content">
-                    <a className="header">{ this.props.url }</a>
-                    <div className="meta">
-                        <span className="date">Joined in 2013</span>
-                    </div>
+                    <a className="header">
+                        { this.props.title }
+                    </a>
                     <div className="description">
-                        { this.props.tags }
+                        <p>{this.props.url}</p>
                     </div>
                 </div>
                 <div className="extra content">
-                    <a>
-                        <i className="user icon"></i>
-                        22 Friends
-                    </a>
+                    <span className="left floated">
+                        <i className="icon bookmark"></i>
+                        {this.props.created}
+                    </span>
+                    <span className="right floated">
+                        <a href="#" id="remove-button">
+                            <i className="icon remove"></i>
+                            Remove
+                        </a>
+                    </span>
                 </div>
             </div>
         );

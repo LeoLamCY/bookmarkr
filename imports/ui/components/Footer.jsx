@@ -7,7 +7,7 @@ export default class Footer extends Component {
     render() {
         return(
             <footer>
-                <button onClick={this.showModal}>Add bookmark</button>
+                <button className="ui button" onClick={this.showModal}><i className="icon plus"></i>Add bookmark</button>
                 &copy; Copyright 2016 Leo Lam
             </footer>
         );
