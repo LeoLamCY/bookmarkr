@@ -15,7 +15,7 @@ export default class Cards extends Component {
                 <div className="extra content">
                     <span className="left floated">
                         <i className="icon bookmark"></i>
-                        {this.props.created}
+                        {moment(this.props.created).format("MM/DD/YYYY")}
                     </span>
                     <span className="right floated">
                         <a href="#" id="remove-button">
