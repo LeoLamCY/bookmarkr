@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import Card from './Card.jsx';
 
 export default class Cards extends Component {
@@ -10,10 +10,14 @@ export default class Cards extends Component {
         return(
             <div className="ui cards">
             { this.props.bookmarks.map( (bookmark) =>
-                    <Card url={ bookmark.url } tags={ bookmark.tags } key={ bookmark._id}/>
+                    <Card bookmark={ bookmark } key={ bookmark._id}/>
                 )
             }
             </div>
         );
     }
 }
+
+Cards.propTypes = {
+    bookmarks: PropTypes.array.isRequired,
+};

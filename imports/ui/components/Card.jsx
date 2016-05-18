@@ -1,24 +1,38 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 
-export default class Cards extends Component {
+import { Bookmarks } from '/imports/api/bookmarks.js';
+
+export default class Card extends Component {
+    constructor(props) {
+        super(props);
+        this.onRemoveClick = this.onRemoveClick.bind(this);
+    }
+
+    onRemoveClick(event) {
+        event.preventDefault();
+        Bookmarks.remove(this.props.bookmark._id);
+    }
+
     render() {
         return(
             <div className="ui card">
                 <div className="content">
-                    <a className="header">
-                        { this.props.title }
+                    <a  href={ this.props.bookmark.url }
+                        title={ this.props.bookmark.title }
+                        className="header">
+                        { this.props.bookmark.title }
                     </a>
                     <div className="description">
-                        <p>{this.props.url}</p>
+                        <p>{this.props.bookmark.url}</p>
                     </div>
                 </div>
                 <div className="extra content">
                     <span className="left floated">
                         <i className="icon bookmark"></i>
-                        {moment(this.props.created).format("MM/DD/YYYY")}
+                        {moment(this.props.bookmark.created).format("MM/DD/YYYY")}
                     </span>
                     <span className="right floated">
-                        <a href="#" id="remove-button">
+                        <a href="#" id="remove-button" onClick={ this.onRemoveClick }>
                             <i className="icon remove"></i>
                             Remove
                         </a>
@@ -28,3 +42,7 @@ export default class Cards extends Component {
         );
     }
 }
+
+Card.propTypes = {
+    bookmark: PropTypes.object.isRequired,
+};
