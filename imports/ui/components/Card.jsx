@@ -13,15 +13,25 @@ export default class Card extends Component {
         Bookmarks.remove(this.props.bookmark._id);
     }
 
+    componentDidMount() {
+        $('.content a').popup({
+            delay: {
+                show: 600
+            }
+        });
+    }
+
     render() {
         return(
             <div className="ui card">
                 <div className="content">
-                    <a  href={ this.props.bookmark.url }
-                        title={ this.props.bookmark.title }
-                        className="header">
+                    <a className="click-zone" href={ this.props.bookmark.url }
+                        data-content={ this.props.bookmark.title }
+                        data-variation="very wide inverted"
+                        ></a>
+                    <div className="header">
                         { this.props.bookmark.title }
-                    </a>
+                    </div>
                     <div className="description">
                         <p>{this.props.bookmark.url}</p>
                     </div>
