@@ -23,7 +23,7 @@ export default class Card extends Component {
 
     render() {
         return(
-            <div className="ui card">
+            <div className="ui card hvr-underline-reveal">
                 <div className="content">
                     <a className="click-zone" href={ this.props.bookmark.url }
                         data-content={ this.props.bookmark.title }
