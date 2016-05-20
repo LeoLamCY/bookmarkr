@@ -1,7 +1,17 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router'
 
+import { Tags } from '/imports/api/tags.js';
+
 export default class Sidebar extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            tags: {}
+        }
+    }
+
     render() {
         return(
             <div className="ui left fixed vertical inverted menu">

@@ -9,6 +9,7 @@ import Cards from '../components/Cards.jsx';
 import Footer from '../components/Footer.jsx';
 
 import { Bookmarks } from '/imports/api/bookmarks.js';
+import { Tags } from '/imports/api/tags.js';
 
 export default class App extends React.Component {
 	constructor(props) {
@@ -18,6 +19,9 @@ export default class App extends React.Component {
 		this.state = {
 			submitSuccess: false,
 		}
+
+		console.log(Bookmarks.find().fetch());
+
 	}
 
 	onAddBookmarkFormSubmit(event) {
@@ -31,6 +35,13 @@ export default class App extends React.Component {
 		if(!url.startsWith("http://") && !url.startsWith("https://")) {
 			url = "http://" + url;
 		}
+
+		tags.map( (tag) => {
+			//Tags.upsert({name: tag}, {});
+			if(Tags.find({name: tag}).fetch().length == 0) {
+				Tags.insert({name: tag});
+			}
+		});
 
 		ReactDOM.findDOMNode(this.refs.title).value = '';
 		ReactDOM.findDOMNode(this.refs.url).value = '';

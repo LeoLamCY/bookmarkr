@@ -6,6 +6,6 @@ import { Bookmarks } from '/imports/api/bookmarks.js';
 
 export default createContainer(() => {
     return {
-        bookmarks: Bookmarks.find({}).fetch(),
+        bookmarks: Bookmarks.find().fetch(),
     };
 }, App);
