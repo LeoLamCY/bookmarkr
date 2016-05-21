@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 import classNames from 'classnames';
 
 import SearchBar from '../components/SearchBar.jsx';
-import Sidebar from '../components/Sidebar.jsx';
+import SidebarContainer from '../containers/SidebarContainer.jsx';
 import Cards from '../components/Cards.jsx';
 import Footer from '../components/Footer.jsx';
 
@@ -19,9 +19,6 @@ export default class App extends React.Component {
 		this.state = {
 			submitSuccess: false,
 		}
-
-		console.log(Bookmarks.find().fetch());
-
 	}
 
 	onAddBookmarkFormSubmit(event) {
@@ -37,9 +34,17 @@ export default class App extends React.Component {
 		}
 
 		tags.map( (tag) => {
-			//Tags.upsert({name: tag}, {});
-			if(Tags.find({name: tag}).fetch().length == 0) {
-				Tags.insert({name: tag});
+			//need to implement methods first
+			//Tags.upsert({name: tags}, {$inc: { count: 1}});
+			let cursor = Tags.find({name: tag});
+			if(cursor.fetch().length == 0) {
+				Tags.insert({
+					name: tag,
+					count: 0,
+				});
+			}
+			else {
+				Tags.update({name: tag}, {$inc: {count: 1}});
 			}
 		});
 
@@ -64,7 +69,7 @@ export default class App extends React.Component {
 		// });
 		return (
 			<div className="wrapper">
-				<Sidebar />
+				<SidebarContainer />
 				<div className="ui main-content">
 					<SearchBar />
 					<Cards bookmarks={ this.props.bookmarks }/>
