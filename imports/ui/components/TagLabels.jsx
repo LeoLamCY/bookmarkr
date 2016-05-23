@@ -7,7 +7,7 @@ export default class TagLabels extends Component {
 
     render() {
         return(
-            <div className='ui circular labels card-labels'>
+            <div className='ui teal circular labels card-labels'>
                 {
                     this.props.tagsArray.map( (name) => 
                         <a className='ui label'>{name}</a>

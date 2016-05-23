@@ -25,10 +25,10 @@ export default class Card extends Component {
         return(
             <div className="ui card hvr-underline-reveal">
                 <div className="content">
-                    <a className="" href={ this.props.bookmark.url }
+                    <a href={ this.props.bookmark.url }
                         data-content={ this.props.bookmark.title }
                         data-variation="very wide inverted"
-                        ></a>
+                        ><span className="click-zone"></span></a>
                     <div className="header">
                         { this.props.bookmark.title }
                     </div>
