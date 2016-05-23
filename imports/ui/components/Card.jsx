@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 
-import { Bookmarks } from '/imports/api/bookmarks.js';
+import TagLabels from '../components/TagLabels.jsx';
 
 export default class Card extends Component {
     constructor(props) {
@@ -25,7 +25,7 @@ export default class Card extends Component {
         return(
             <div className="ui card hvr-underline-reveal">
                 <div className="content">
-                    <a className="click-zone" href={ this.props.bookmark.url }
+                    <a className="" href={ this.props.bookmark.url }
                         data-content={ this.props.bookmark.title }
                         data-variation="very wide inverted"
                         ></a>
@@ -35,6 +35,7 @@ export default class Card extends Component {
                     <div className="description">
                         <p>{this.props.bookmark.url}</p>
                     </div>
+                    <TagLabels tagsArray={this.props.bookmark.tagsArray}/>
                 </div>
                 <div className="extra content">
                     <span className="left floated">
