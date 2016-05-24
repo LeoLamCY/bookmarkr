@@ -13,10 +13,20 @@ import Footer from '../components/Footer.jsx';
 export default class App extends React.Component {
 	constructor(props) {
 		super(props);
+
+		this.state = {
+			selectedTags: [],
+		}
+	}
+
+	onSearchBarChange(tags) {
+		console.log("test");
+		this.state.selectedTags = tags;
 	}
 
 	processSelectedTags(selectedTags) {
-		return selectedTags.split('+');
+		if(selectedTags)
+			return selectedTags.split('+');
 	}
 
 	render() {
@@ -30,8 +40,8 @@ export default class App extends React.Component {
 			<div className="wrapper">
 				<SidebarContainer />
 				<div className="ui main-content">
-					<SearchBar />
-					<Cards bookmarks={ this.props.bookmarks } selectedTags={selectedTags}/>
+					<SearchBar onSearchBarChange={this.onSearchBarChange}/>
+					<Cards bookmarks={ this.props.bookmarks } selectedTags={this.state.selectedTags}/>
 					<AddBookmarkForm />
 				</div>
 				<Footer />
@@ -43,5 +53,5 @@ export default class App extends React.Component {
 App.propTypes = {
   bookmarks: PropTypes.array.isRequired,
   tags: PropTypes.array.isRequired,
-  selectedTags: PropTypes.string.isRequired,
+  selectedTags: PropTypes.string,
 };
