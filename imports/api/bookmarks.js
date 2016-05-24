@@ -32,9 +32,11 @@ Meteor.methods({
             // id == null ? this.setState({'submitSuccess': false}) : this.setState({'submitSuccess': true});
         });
     },
-    'bookmarks.remove'(id) {
+    'bookmarks.remove'(id, tagsArray) {
         check(id, String);
+        check(tagsArray, [String]);
 
+        Meteor.call('tags.remove', tagsArray);
         Bookmarks.remove(id);
     },
 });

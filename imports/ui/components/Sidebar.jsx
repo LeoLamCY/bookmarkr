@@ -12,14 +12,14 @@ export default class Sidebar extends Component {
         return(
             <div className="ui left fixed vertical inverted menu">
                 <header className="item">
-                    <Link to="\"><img className="ui small image centered" src="img/logo.png" /></Link>
+                    <Link to="\"><img className="ui small image centered" src="/img/logo.png" /></Link>
                 </header>
                 <div className="item">
                     <h4 className="ui inverted header">Tags</h4>
                     <div className="menu">
                     {
                         this.props.tags.map( (tag) =>
-                            <a href="#" className="ui teal tag label name" key={tag._id}>{tag.name}<span className="detail">{tag.count}</span></a>
+                            <Link to={`/tags/${tag.name}`} href="#" className="ui teal tag label name" key={tag._id}>{tag.name}<span className="detail">{tag.count}</span></Link>
                         )
                     }
                     </div>

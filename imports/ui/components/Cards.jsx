@@ -20,4 +20,5 @@ export default class Cards extends Component {
 
 Cards.propTypes = {
     bookmarks: PropTypes.array.isRequired,
+    selectedTags: PropTypes.array,
 };

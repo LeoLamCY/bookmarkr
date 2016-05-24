@@ -18,4 +18,8 @@ Meteor.methods({
         //     Tags.update({name: name}, {$inc: {count: 1}});
         // }
     },
+    'tags.remove'(names) {
+        Tags.update({name: {$in:names}}, {$inc: {count: -1}}, {multi: true});
+        Tags.remove({count: {$lte: 0}});
+    },
 });

@@ -5,9 +5,14 @@
     	&:hover{ color:#b31b1b; }
 	}
 
-	.content {
-		position: relative;
+	.card > .content {
+		display:flex;
+    flex-direction:column;
 	}
+
+  .content .description {
+      margin-bottom: 15px;
+  }
 
 	.click-zone {
 		position:absolute;
@@ -18,10 +23,14 @@
     z-index:1;
 	}
 
-    .header {
-        text-overflow: ellipsis;
-        overflow: hidden;
-    }
+  .header {
+      text-overflow: ellipsis;
+      overflow: hidden;
+  }
+
+  .extra.content {
+    z-index:9999;
+  }
 }
 
 /* Underline Reveal */
