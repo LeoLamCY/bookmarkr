@@ -12,7 +12,7 @@ Meteor.methods({
         check(url, String);
         check(tags, String);
 
-        const tagsArray = tags.split(/,\s+/);
+        const tagsArray = tags.split(/,\s*/);
         const date = moment().toDate();
 
         if(!url.startsWith("http://") && !url.startsWith("https://")) {

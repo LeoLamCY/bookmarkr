@@ -8,7 +8,6 @@ export default class Cards extends Component {
 
     renderCards() {
         let filteredBookmarks = this.props.bookmarks;
-        console.log(this.props.selectedTags);
 
         if(this.props.selectedTags && this.props.selectedTags[0] !== "") {
             filteredBookmarks = filteredBookmarks.filter( bookmark => {
