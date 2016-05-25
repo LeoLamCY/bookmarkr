@@ -42,7 +42,7 @@ export default class App extends React.Component {
 				<SidebarContainer onTagClick={this.onTagClick}/>
 				<div className="ui main-content">
 					<SearchBar onSearchBarChange={this.onSearchBarChange} allTags={this.props.tags} clickedTag={this.state.clickedTag}/>
-					<Cards bookmarks={ this.props.bookmarks } selectedTags={this.state.selectedTags}/>
+					<Cards bookmarks={ this.props.bookmarks } selectedTags={this.state.selectedTags} onTagClick={this.onTagClick}/>
 					<AddBookmarkForm />
 				</div>
 				<Footer />

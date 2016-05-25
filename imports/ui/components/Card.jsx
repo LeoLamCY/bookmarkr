@@ -16,7 +16,7 @@ export default class Card extends Component {
     componentDidMount() {
         $('.content a').popup({
             delay: {
-                show: 600
+                show: 800
             }
         });
     }
@@ -35,7 +35,7 @@ export default class Card extends Component {
                     <div className="description">
                         <p>{this.props.bookmark.url}</p>
                     </div>
-                    <TagLabels tagsArray={this.props.bookmark.tagsArray}/>
+                    <TagLabels tagsArray={this.props.bookmark.tagsArray} onTagClick={this.props.onTagClick}/>
                 </div>
                 <div className="extra content">
                     <span className="left floated">
@@ -56,4 +56,5 @@ export default class Card extends Component {
 
 Card.propTypes = {
     bookmark: PropTypes.object.isRequired,
+    onTagClick: PropTypes.func.isRequired,
 };

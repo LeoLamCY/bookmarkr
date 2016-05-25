@@ -5,30 +5,41 @@ export default class SearchBar extends Component {
         super(props);
         this.state = {
             tags: "",
+            lastAddedTag: "",
+            lastRemovedTag: "",
         }
     }
 
     componentDidMount() {
         $(".search.dropdown").dropdown({
+            showOnFocus: false,
             onChange: (value, text, $selectedItem) => {
-                this.setState({tags: value});
-                this.props.onSearchBarChange(this.state.tags);
+                this.setState({tags: value}, () => 
+                    this.props.onSearchBarChange(this.state.tags)
+                );
+            },
+            onRemove: (removedValue, removedText, $removedChoice) => {
+                this.setState({lastRemovedTag: removedValue});
             },
         }).bind(this);
     }
 
     componentWillReceiveProps(newProps) {
-        if(newProps.clickedTag != this.props.clickedTag) {
-            $(".search.dropdown").dropdown(
-                'set selected', newProps.clickedTag
+        console.log("clickedTag: " + newProps.clickedTag);
+        console.log("lastAdded: " + this.state.lastAddedTag);
+        console.log("lastRemoved: " + this.state.lastRemovedTag);
+        if(newProps.clickedTag != this.state.lastAddedTag || newProps.clickedTag == this.state.lastRemovedTag) {
+            this.setState({lastAddedTag: newProps.clickedTag}, () => 
+                $(".search.dropdown").dropdown('set selected', newProps.clickedTag)
             );
+            
         }
     }
 
     renderTags() {
-        return this.props.allTags.map( (tag) => {
+        return this.props.allTags.map( (tag, i) => {
             return(
-                <div className="item">{tag.name}</div>
+                <div className="item" key={i}>{tag.name}</div>
             )
         });
     }

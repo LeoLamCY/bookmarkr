@@ -19,7 +19,7 @@ export default class Sidebar extends Component {
                     <div className="menu">
                     {
                         this.props.tags.map( (tag) =>
-                            <a href="#" className="ui teal tag label name" onClick={this.props.onTagClick(tag)} key={tag._id}>{tag.name}<span className="detail">{tag.count}</span></a>
+                            <a className="ui teal tag label name" onClick={this.props.onTagClick.bind(this, tag.name)} key={tag._id}>{tag.name}<span className="detail">{tag.count}</span></a>
                         )
                     }
                     </div>

@@ -17,7 +17,7 @@ export default class Cards extends Component {
 
         return filteredBookmarks.map( (bookmark) => {
             return(
-                <Card bookmark={ bookmark } key={ bookmark._id}/>
+                <Card bookmark={ bookmark } key={ bookmark._id} onTagClick={this.props.onTagClick}/>
             )
         });
     }
@@ -34,4 +34,5 @@ export default class Cards extends Component {
 Cards.propTypes = {
     bookmarks: PropTypes.array.isRequired,
     selectedTags: PropTypes.array,
+    onTagClick: PropTypes.func.isRequired,
 };

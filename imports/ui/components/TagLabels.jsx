@@ -9,8 +9,8 @@ export default class TagLabels extends Component {
         return(
             <div className='ui teal mini labels card-labels'>
                 {
-                    this.props.tagsArray.map( (name) => 
-                        <a className='ui label'>{name}</a>
+                    this.props.tagsArray.map( (name, i) => 
+                        <a className='ui label' onClick={this.props.onTagClick.bind(this, name)} key={i}>{name}</a>
                     )
                 }
             </div>
@@ -20,4 +20,5 @@ export default class TagLabels extends Component {
 
 TagLabels.propTypes = {
     tagsArray: PropTypes.array.isRequired,
+    onTagClick: PropTypes.func.isRequired,
 }
