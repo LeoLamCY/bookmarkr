@@ -6,6 +6,7 @@ export const Tags = new Mongo.Collection('tags');
 
 Meteor.methods({
     'tags.insert'(name) {
+        check(name, String);
         Tags.upsert({name: name}, {$inc: { count: 1}});
 
         // if(Tags.find({name: name}).fetch().length == 0) {
@@ -19,6 +20,8 @@ Meteor.methods({
         // }
     },
     'tags.remove'(names) {
+        check(names, [String]);
+
         Tags.update({name: {$in:names}}, {$inc: {count: -1}}, {multi: true});
         Tags.remove({count: {$lte: 0}});
     },

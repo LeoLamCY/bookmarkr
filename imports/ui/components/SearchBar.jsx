@@ -11,11 +11,18 @@ export default class SearchBar extends Component {
     componentDidMount() {
         $(".search.dropdown").dropdown({
             onChange: (value, text, $selectedItem) => {
-                // that.props.onSearchBarChange(value);
                 this.setState({tags: value});
                 this.props.onSearchBarChange(this.state.tags);
             },
         }).bind(this);
+    }
+
+    renderTags() {
+        return this.props.allTags.map( (tag) => {
+            return(
+                <div className="item">{tag.name}</div>
+            )
+        });
     }
 
     render() {
@@ -25,10 +32,7 @@ export default class SearchBar extends Component {
                 <i className="search disabled icon"></i>
                 <div className="default text">Search Tags</div>
                 <div className="menu">
-                    <div className="item">test1</div>
-                    <div className="item">tes3</div>
-                    <div className="item">test2</div>
-                    <div className="item">Google</div>
+                    {this.renderTags()}
                 </div>
             </div>
         );
@@ -37,4 +41,5 @@ export default class SearchBar extends Component {
 
 SearchBar.propTypes = {
     onSearchBarChange: PropTypes.func.isRequired,
+    allTags: PropTypes.array.isRequired,
 };

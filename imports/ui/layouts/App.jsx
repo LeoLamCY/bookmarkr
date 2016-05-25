@@ -41,7 +41,7 @@ export default class App extends React.Component {
 			<div className="wrapper">
 				<SidebarContainer />
 				<div className="ui main-content">
-					<SearchBar onSearchBarChange={this.onSearchBarChange}/>
+					<SearchBar onSearchBarChange={this.onSearchBarChange} allTags={this.props.tags}/>
 					<Cards bookmarks={ this.props.bookmarks } selectedTags={this.state.selectedTags}/>
 					<AddBookmarkForm />
 				</div>
