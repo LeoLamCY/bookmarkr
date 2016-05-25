@@ -19,7 +19,7 @@ export default class Sidebar extends Component {
                     <div className="menu">
                     {
                         this.props.tags.map( (tag) =>
-                            <Link to={`/tags/${tag.name}`} href="#" className="ui teal tag label name" key={tag._id}>{tag.name}<span className="detail">{tag.count}</span></Link>
+                            <a href="#" className="ui teal tag label name" onClick={this.props.onTagClick(tag)} key={tag._id}>{tag.name}<span className="detail">{tag.count}</span></a>
                         )
                     }
                     </div>
@@ -31,4 +31,5 @@ export default class Sidebar extends Component {
 
 Sidebar.propTypes = {
     tags: PropTypes.array.isRequired,
+    onTagClick: PropTypes.func.isRequired,
 };

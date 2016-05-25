@@ -17,6 +17,14 @@ export default class SearchBar extends Component {
         }).bind(this);
     }
 
+    componentWillReceiveProps(newProps) {
+        if(newProps.clickedTag != this.props.clickedTag) {
+            $(".search.dropdown").dropdown(
+                'set selected', newProps.clickedTag
+            );
+        }
+    }
+
     renderTags() {
         return this.props.allTags.map( (tag) => {
             return(
@@ -42,4 +50,5 @@ export default class SearchBar extends Component {
 SearchBar.propTypes = {
     onSearchBarChange: PropTypes.func.isRequired,
     allTags: PropTypes.array.isRequired,
+    clickedTag: PropTypes.string,
 };

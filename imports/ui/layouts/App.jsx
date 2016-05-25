@@ -16,22 +16,22 @@ export default class App extends React.Component {
 
 		this.state = {
 			selectedTags: [],
+			clickedTag: "",
 		};
 
 		this.onSearchBarChange = this.onSearchBarChange.bind(this);
+		this.onTagClick = this.onTagClick.bind(this);
 	}
 
 	onSearchBarChange(tags) {
 		this.setState({selectedTags: tags.split(',')});
 	}
 
-	processSelectedTags(selectedTags) {
-		if(selectedTags)
-			return selectedTags.split('+');
+	onTagClick(tag) {
+		this.setState({clickedTag: tag});
 	}
 
 	render() {
-		const selectedTags = this.processSelectedTags(this.props.selectedTags);
 		// var formSuccessClass = classNames({
 		// 	'ui': true,
 		// 	'form': true,
@@ -39,9 +39,9 @@ export default class App extends React.Component {
 		// });
 		return (
 			<div className="wrapper">
-				<SidebarContainer />
+				<SidebarContainer onTagClick={this.onTagClick}/>
 				<div className="ui main-content">
-					<SearchBar onSearchBarChange={this.onSearchBarChange} allTags={this.props.tags}/>
+					<SearchBar onSearchBarChange={this.onSearchBarChange} allTags={this.props.tags} clickedTag={this.state.clickedTag}/>
 					<Cards bookmarks={ this.props.bookmarks } selectedTags={this.state.selectedTags}/>
 					<AddBookmarkForm />
 				</div>
