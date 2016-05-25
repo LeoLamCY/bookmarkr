@@ -16,12 +16,14 @@ export default class App extends React.Component {
 
 		this.state = {
 			selectedTags: [],
-		}
+		};
+
+		this.onSearchBarChange = this.onSearchBarChange.bind(this);
 	}
 
 	onSearchBarChange(tags) {
-		console.log("test");
-		this.state.selectedTags = tags;
+		this.setState({ selectedTags: tags.split(',')});
+		console.log(this.state.selectedTags);
 	}
 
 	processSelectedTags(selectedTags) {

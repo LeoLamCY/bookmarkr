@@ -4,7 +4,6 @@ import Card from './Card.jsx';
 export default class Cards extends Component {
     constructor(props) {
         super(props);
-        this.renderCards();
     }
 
     renderCards() {
