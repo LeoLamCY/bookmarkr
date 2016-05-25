@@ -16,7 +16,7 @@ export default class AddBookmarkForm extends Component {
 		event.preventDefault();
 		const title = ReactDOM.findDOMNode(this.refs.title).value.trim();
 		const url = ReactDOM.findDOMNode(this.refs.url).value.trim();
-		const tags = ReactDOM.findDOMNode(this.refs.tags).value.trim();
+		const tags = ReactDOM.findDOMNode(this.refs.tags).value.trim().toLowerCase();
 
 		ReactDOM.findDOMNode(this.refs.title).value = '';
 		ReactDOM.findDOMNode(this.refs.url).value = '';

@@ -22,8 +22,7 @@ export default class App extends React.Component {
 	}
 
 	onSearchBarChange(tags) {
-		this.setState({ selectedTags: tags.split(',')});
-		console.log(this.state.selectedTags);
+		this.setState({selectedTags: tags.split(',')});
 	}
 
 	processSelectedTags(selectedTags) {

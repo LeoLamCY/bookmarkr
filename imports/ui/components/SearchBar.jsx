@@ -26,8 +26,9 @@ export default class SearchBar extends Component {
                 <div className="default text">Search Tags</div>
                 <div className="menu">
                     <div className="item">test1</div>
-                    <div className="item">tes2</div>
+                    <div className="item">tes3</div>
                     <div className="item">test2</div>
+                    <div className="item">Google</div>
                 </div>
             </div>
         );
