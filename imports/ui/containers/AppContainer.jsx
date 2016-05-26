@@ -22,5 +22,5 @@ export default createContainer(( {params: { selectedTags }} ) => {
             tags: Tags.find().fetch(),
         };
     }
-    
+
 }, App);
