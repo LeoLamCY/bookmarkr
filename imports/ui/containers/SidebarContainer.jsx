@@ -5,6 +5,7 @@ import Sidebar from '../components/Sidebar.jsx';
 import { Tags } from '/imports/api/tags.js';
 
 export default createContainer(() => {
+    Meteor.subscribe('tags');
     return {
         tags: Tags.find().fetch(),
     };

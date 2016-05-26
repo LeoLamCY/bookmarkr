@@ -28,6 +28,7 @@ export default class SearchBar extends Component {
         console.log("clickedTag: " + newProps.clickedTag);
         console.log("lastAdded: " + this.state.lastAddedTag);
         console.log("lastRemoved: " + this.state.lastRemovedTag);
+        console.log("------------------ ");
         if(newProps.clickedTag != this.state.lastAddedTag || newProps.clickedTag == this.state.lastRemovedTag) {
             this.setState({lastAddedTag: newProps.clickedTag}, () => 
                 $(".search.dropdown").dropdown('set selected', newProps.clickedTag)

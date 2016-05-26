@@ -4,6 +4,12 @@ import { check } from 'meteor/check';
 
 export const Tags = new Mongo.Collection('tags');
 
+if (Meteor.isServer) {
+    Meteor.publish('tags', function tagsPublication() {
+        return Tags.find();
+    });
+}
+
 Meteor.methods({
     'tags.insert'(name) {
         check(name, String);

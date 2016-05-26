@@ -6,6 +6,12 @@ import { Tags } from '/imports/api/tags.js';
 
 export const Bookmarks = new Mongo.Collection('bookmarks');
 
+if (Meteor.isServer) {
+    Meteor.publish('bookmarks', function bookmarksPublication() {
+        return Bookmarks.find();
+    });
+}
+
 Meteor.methods({
     'bookmarks.insert'(title, url, tags) {
         check(title, String);

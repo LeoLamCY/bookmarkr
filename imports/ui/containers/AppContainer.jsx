@@ -6,6 +6,8 @@ import { Bookmarks } from '/imports/api/bookmarks.js';
 import { Tags } from '/imports/api/tags.js';
 
 export default createContainer(( {params: { selectedTags }} ) => {
+    Meteor.subscribe('tags');
+    Meteor.subscribe('bookmarks');
 
     if(selectedTags) {
         return {
