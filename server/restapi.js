@@ -3,36 +3,35 @@ import { Bookmarks } from '/imports/api/bookmarks.js';
 
 var Api = new Restivus({
     prettyJson: true,
+    useDefaultAuth: true,
+    defaultHeaders: {'Content-Type': 'application/json'},
 });
 
 // Api.addCollection(Bookmarks, {
 //     excludedEndpoints: ['delete', 'getAll'],
+
 // });
 
 Api.addCollection(Tags, {
     excludedEndpoints: ['delete', 'post', 'put'],
 });
 
-Api.addRoute('bookmarks', {authRequired: false}, {
-    get: {
-        authRequired: false,
-        action: function () {
-            return "test";
-        }
+Api.addRoute('bookmarks/:id', {authRequired: false}, {
+    get: function() { 
+        return Bookmarks.findOne(this.urlParams.id);
     },
-    post: function () {
+    getAll: function() { 
+        return Bookmarks.find({}).fetch();
+    },
+});
 
+Api.addRoute('bookmarks', {authRequired: false}, {
+    get: function() { 
+        return Bookmarks.find({}).fetch();
     },
-    put: function () {
-    // PUT api/articles
-    },
-    patch: function () {
-    // PATCH api/articles
-    },
-    delete: function () {
-    // DELETE api/articles
-    },
-    options: function () {
-    // OPTIONS api/articles
-    }
+    post: {
+        action: function () {
+            Meteor.call('bookmarks.insert', this.bodyParams.title, this.bodyParams.url, this.bodyParams.tags);
+            return {status: 'success', data: this.bodyParams};
+    }},
 });
