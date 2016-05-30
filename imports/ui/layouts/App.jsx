@@ -28,7 +28,9 @@ export default class App extends React.Component {
 	}
 
 	onTagClick(tag) {
-		this.setState({clickedTag: tag});
+		this.setState({clickedTag: tag}, function() {
+			this.state.clickedTag = "";
+		});
 	}
 
 	render() {

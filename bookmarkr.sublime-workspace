@@ -1,0 +1,860 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"select",
+				"selectedTags"
+			],
+			[
+				"mult",
+				"multiple"
+			],
+			[
+				"render",
+				"renderCards"
+			],
+			[
+				"filter",
+				"filteredBookmarks"
+			],
+			[
+				"sele",
+				"selectedTagsArray"
+			],
+			[
+				"selec",
+				"selectedTags	(AppContainer.jsx)"
+			],
+			[
+				"Search",
+				"SearchBar"
+			],
+			[
+				"App",
+				"AppContainer"
+			],
+			[
+				"current",
+				"currentUserId"
+			],
+			[
+				"hide",
+				"hideCompleted"
+			],
+			[
+				"new",
+				"new_item_text"
+			],
+			[
+				"bomb",
+				"bomb_check"
+			],
+			[
+				"get",
+				"get_voice_command"
+			],
+			[
+				"re",
+				"recognize_sphinx"
+			],
+			[
+				"gramm",
+				"GRAMMARDIR"
+			],
+			[
+				"grammar",
+				"grammar_name"
+			],
+			[
+				"recog",
+				"recognize_google"
+			],
+			[
+				"th",
+				"th	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "client/main.js",
+			"settings":
+			{
+				"buffer_size": 230,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "imports/ui/layouts/App.jsx",
+			"settings":
+			{
+				"buffer_size": 1592,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "imports/ui/components/Sidebar.jsx",
+			"settings":
+			{
+				"buffer_size": 1166,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "imports/ui/components/SearchBar.jsx",
+			"settings":
+			{
+				"buffer_size": 2099,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "imports/ui/components/Card.jsx",
+			"settings":
+			{
+				"buffer_size": 2074,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "imports/ui/components/Cards.jsx",
+			"settings":
+			{
+				"buffer_size": 1028,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "server/restapi.js",
+			"settings":
+			{
+				"buffer_size": 980,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "imports/api/bookmarks.js",
+			"settings":
+			{
+				"buffer_size": 1264,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Anaconda Python Builder",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Django",
+					""
+				],
+				[
+					"Django",
+					"Run Server"
+				],
+				[
+					"Django",
+					"Run Unit Tests"
+				],
+				[
+					"Django",
+					"Run Functional Tests"
+				]
+			],
+			[
+				"Django",
+				"Run Functional Tests"
+			]
+		],
+		[
+			[
+				[
+					"Django",
+					""
+				],
+				[
+					"Django",
+					"Run Unit Tests"
+				]
+			],
+			[
+				"Django",
+				"Run Unit Tests"
+			]
+		],
+		[
+			[
+				[
+					"Django",
+					""
+				],
+				[
+					"Django",
+					"Run Unit Tests"
+				],
+				[
+					"Django",
+					"Run Functional Tests"
+				]
+			],
+			[
+				"Django",
+				"Run Functional Tests"
+			]
+		],
+		[
+			[
+				[
+					"Django",
+					""
+				],
+				[
+					"Django",
+					"Word Count (current file)"
+				],
+				[
+					"Django",
+					"Run Unit Tests"
+				]
+			],
+			[
+				"Django",
+				"Word Count (current file)"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "inst",
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"glue",
+				"Glue - Launch"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"haml",
+				"Set Syntax: Ruby Haml"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 414.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"dir",
+			"python manage.py stopserver",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/P/Development/JS/meteor/bookmarkr",
+		"/P/Development/JS/meteor/bookmarkr/.meteor",
+		"/P/Development/JS/meteor/bookmarkr/client",
+		"/P/Development/JS/meteor/bookmarkr/imports",
+		"/P/Development/JS/meteor/bookmarkr/imports/api",
+		"/P/Development/JS/meteor/bookmarkr/imports/startup",
+		"/P/Development/JS/meteor/bookmarkr/imports/startup/client",
+		"/P/Development/JS/meteor/bookmarkr/imports/startup/server",
+		"/P/Development/JS/meteor/bookmarkr/imports/ui",
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/components",
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/containers",
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/layouts",
+		"/P/Development/JS/meteor/bookmarkr/public",
+		"/P/Development/JS/meteor/bookmarkr/public/css",
+		"/P/Development/JS/meteor/bookmarkr/server"
+	],
+	"file_history":
+	[
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/AddBookmarkForm.jsx",
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/Footer.jsx",
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/containers/AppContainer.jsx",
+		"/P/Development/JS/meteor/bookmarkr/imports/api/tags.js",
+		"/P/Development/JS/meteor/bookmarkr/imports/api/bookmarks.js",
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/containers/SidebarContainer.jsx",
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/TagLabels.jsx",
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/Cards.jsx",
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/Card.jsx",
+		"/P/Development/JS/meteor/bookmarkr/.meteor/packages",
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/Footer.less",
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/Card.less",
+		"/P/Development/JS/meteor/bookmarkr/imports/startup/client/routes.jsx",
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/Sidebar.jsx",
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/SearchBar.less",
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/TagLabels.less",
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/SearchBar.jsx",
+		"/P/Development/JS/meteor/bookmarkr/client/main.less",
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/Sidebar.less",
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/layouts/App.less",
+		"/C/Users/kou.KOUGA/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/P/Development/JS/meteor/todos/imports/api/lists/lists.js",
+		"/P/Development/JS/meteor/bookmarkr/client/main.js",
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/layouts/Footer.jsx",
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/Cards.less",
+		"/C/Users/kou.KOUGA/AppData/Roaming/Sublime Text 3/Packages/User/JavaScript (Babel).sublime-settings",
+		"/P/Development/JS/meteor/bookmark-tags/imports/ui/containers/AppContainer.jsx",
+		"/P/Development/JS/meteor/bookmark-tags/client/main.less",
+		"/P/Development/JS/meteor/bookmark-tags/imports/startup/client/routes.jsx",
+		"/P/Development/JS/meteor/bookmark-tags/imports/ui/layouts/App.jsx",
+		"/P/Development/JS/meteor/bookmark-tags/client/main.html",
+		"/P/Development/JS/meteor/bookmark-tags/client/lib/semantic-ui/custom.semantic.json",
+		"/P/Development/JS/meteor/bookmark-tags/.meteor/packages",
+		"/P/Development/JS/meteor/bookmark-tags/client/main.js",
+		"/P/Development/JS/meteor/todos/imports/ui/pages/AuthPage.jsx",
+		"/P/Development/JS/meteor/todos/imports/startup/server/fixtures.js",
+		"/P/Development/JS/meteor/todos/imports/startup/server/index.js",
+		"/P/Development/JS/meteor/todos/imports/ui/pages/ListPage.jsx",
+		"/P/Development/JS/meteor/todos/imports/ui/pages/AuthPageJoin.jsx",
+		"/P/Development/JS/meteor/todos/client/main.js",
+		"/P/Development/JS/meteor/simple-todos/imports/api/tasks.js",
+		"/P/Development/JS/meteor/simple-todos/imports/ui/Task.jsx",
+		"/P/Development/JS/meteor/simple-todos/client/main.jsx",
+		"/P/Development/JS/meteor/simple-todos/imports/ui/App.jsx",
+		"/P/Development/JS/meteor/simple-todos/server/main.js",
+		"/P/Development/JS/meteor/simple-todos/client/main.html",
+		"/P/Development/JS/meteor/simple-todos/client/simple-todos-react.css",
+		"/P/Development/JS/realdebrid-bot/bot.js",
+		"/P/Development/Python/you-get/src/you_get/common.py",
+		"/P/Development/Python/you-get/src/you_get/extractors/youku.py",
+		"/P/Development/Python/you-get/src/you_get/extractors/acfun.py",
+		"/P/Development/Python/youtube-dl/youtube_dl/extractor/rai.py",
+		"/P/Development/Python/youtube-dl/youtube_dl/extractor/youtube.py",
+		"/P/Development/Python/youtube-dl/youtube_dl/extractor/vimeo.py",
+		"/P/Development/Python/youtube-dl/youtube_dl/utils.py",
+		"/P/Development/Python/youtube-dl/youtube_dl/extractor/common.py",
+		"/P/Development/Python/youtube-dl/youtube_dl/compat.py",
+		"/P/Development/Python/youtube-dl/youtube_dl/extractor/redtube.py",
+		"/P/Development/Python/TDD/superlists/superlists/urls.py",
+		"/P/Development/Python/TDD/superlists/lists/templates/home.html",
+		"/P/Development/Python/TDD/superlists/lists/views.py",
+		"/P/Development/Python/TDD/superlists/functional_tests/tests.py",
+		"/P/Development/Python/TDD/superlists/lists/models.py",
+		"/P/Development/Python/TDD/superlists/lists/tests.py",
+		"/P/Development/Python/TDD/superlists/functional_tests/functional_tests.py",
+		"/P/Development/Python/TDD/tdd.sublime-project",
+		"/P/Development/Python/TDD/superlists/functional_tests/__init__.py",
+		"/C/Users/kou.KOUGA/AppData/Roaming/npm/node_modules/phantomjs-prebuilt/bin/phantomjs",
+		"/P/Development/Python/TDD/superlists/superlists/settings.py",
+		"/C/Users/kou.KOUGA/AppData/Roaming/Sublime Text 3/Packages/User/Glue.sublime-settings",
+		"/P/Development/Python/TDD/terminal.glue",
+		"/C/Users/kou.KOUGA/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/C/Users/kou.KOUGA/AppData/Roaming/Sublime Text 3/Packages/User/Python.sublime-settings",
+		"/C/Users/kou.KOUGA/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/kou.KOUGA/AppData/Roaming/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/P/Development/Python/TDD/superlists/functional_tests.py",
+		"/P/Development/Python/TDD/superlists/.gitignore",
+		"/P/Development/Python/TDD/functional_tests.py",
+		"/P/Development/rails/projects/cabinet/app/controllers/new.html.haml",
+		"/C/Users/kou.KOUGA/AppData/Roaming/Sublime Text 3/Packages/User/Ruby.sublime-settings",
+		"/P/Development/rails/projects/cabinet/app/controllers/newfile.rb",
+		"/I/Downloads/Templates/test.py",
+		"/P/Development/rails/projects/cabinet/config/routes.rb",
+		"/P/Development/rails/projects/cabinet/Gemfile",
+		"/P/Development/Websites/Yaoya/index.html",
+		"/P/Development/Firefox Addons/skip-countdown/block.js",
+		"/P/Development/Firefox Addons/skip-countdown/package.json",
+		"/P/Development/Firefox Addons/skip-countdown/index.js",
+		"/P/Development/Python/ExplodesAI/explodes_ai/main.py",
+		"/P/Development/Python/ExplodesAI/explodes_ai/speech_recognizer.py",
+		"/P/Development/Python/ExplodesAI/explodes_ai/engine.py",
+		"/P/Development/Python/ExplodesAI/explodes_ai/bomb_check.py",
+		"/P/Development/Python/ExplodesAI/explodesenv/Lib/site-packages/speech_recognition/__init__.py",
+		"/P/Development/Python/ExplodesAI/explodes_ai/grammar/main_commands.gram",
+		"/P/Development/Python/ExplodesAI/explodes_ai/grammar/bomb_check.gram",
+		"/P/Development/Python/ExplodesAI/explodes_ai/test.js",
+		"/C/Users/kou.KOUGA/AppData/Roaming/Sublime Text 3/Packages/User/JavaScript.sublime-settings",
+		"/C/Users/kou.KOUGA/AppData/Roaming/Sublime Text 3/Packages/User/JSON.sublime-settings",
+		"/P/Development/Python/ExplodesAI/explodes_ai/grammar/goforward.gram",
+		"/P/Development/Python/ExplodesAI/explodes_ai/bomb_check",
+		"/P/Development/Python/ExplodesAI/explodes_ai/___init__.py",
+		"/P/Development/Python/ExplodesAI/explodes_ai/data/goforward.gram",
+		"/P/Development/Python/Python3/Lib/site-packages/speech_recognition/__init__.py",
+		"/P/Development/Python/Python3/Lib/site-packages/speech_recognition/__main__.py",
+		"/P/Development/Python/ExplodesAI/__init__.py",
+		"/I/Downloads/chal3.py",
+		"/I/Downloads/parser.py",
+		"/I/Downloads/chal.py",
+		"/I/Downloads/ayj.html"
+	],
+	"find":
+	{
+		"height": 70.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"');\n",
+			"intersection",
+			"\n    componentDidUpdate() {\n      $('.search.dropdown').dropdown('refresh');\n      \n      console.log(\"update\");\n    }",
+			"console",
+			"selectedItem",
+			"\";\n",
+			"color",
+			"this.props",
+			"/>\n",
+			"\";\n",
+			"class",
+			"\"class\"",
+			"{\n",
+			"loading",
+			");\n",
+			"(),\n",
+			"get_response",
+			"get_html",
+			"xpath_text",
+			"docid",
+			"_download_xml",
+			"compat_etree_fromstring",
+			"_xml",
+			"smuggle_url",
+			"_VALID_URL",
+			"unsupported",
+			"assertIn",
+			"\\",
+			"Scripts",
+			"djangoenv",
+			"response",
+			"python",
+			"},",
+			"4",
+			"(way to the startup folder)/",
+			"(way to the startup folder)",
+			"checkOnLoad",
+			"onNotDetected",
+			"\");\n",
+			"/*\",\n",
+			":\n",
+			"))\n",
+			"listen_in",
+			"')\n",
+			"class=\"tg-yw4l\"",
+			"th",
+			">\n",
+			"before"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"className",
+			"\\\\",
+			"",
+			"td"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 6,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "client/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 230,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								225,
+								225
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "imports/ui/layouts/App.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1592,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1148,
+								1148
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "imports/ui/components/Sidebar.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1166,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								848,
+								848
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "imports/ui/components/SearchBar.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2099,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1030,
+								1030
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "imports/ui/components/Card.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2074,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2070,
+								2032
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 198.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "imports/ui/components/Cards.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1028,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								932,
+								932
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "server/restapi.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 980,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								173,
+								173
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "imports/api/bookmarks.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1264,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 70.0
+	},
+	"input":
+	{
+		"height": 63.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 217.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Django",
+	"project": "bookmarkr.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 242.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -12,7 +12,7 @@ export default class Sidebar extends Component {
         return(
             <div className="ui left fixed vertical inverted menu">
                 <header className="item">
-                    <Link to="/"><img className="ui small image centered" src="/img/logo.png" /></Link>
+                    <a href="/"><img className="ui small image centered" src="/img/logo.png" /></a>
                 </header>
                 <div className="item">
                     <h4 className="ui inverted header">Tags</h4>
