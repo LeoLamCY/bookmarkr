@@ -1,4 +1,2 @@
 node_modules/
-client/lib/semantic-ui/*
-!client/lib/semantic-ui/custom.semantic.json
 *.stackdump
