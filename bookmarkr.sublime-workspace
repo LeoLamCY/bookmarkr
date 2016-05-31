@@ -91,7 +91,15 @@
 			"file": "imports/ui/layouts/App.jsx",
 			"settings":
 			{
-				"buffer_size": 1592,
+				"buffer_size": 1640,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": ".meteor/packages",
+			"settings":
+			{
+				"buffer_size": 1044,
 				"line_ending": "Windows"
 			}
 		},
@@ -99,7 +107,7 @@
 			"file": "imports/ui/components/Sidebar.jsx",
 			"settings":
 			{
-				"buffer_size": 1166,
+				"buffer_size": 1162,
 				"line_ending": "Windows"
 			}
 		},
@@ -132,6 +140,14 @@
 			"settings":
 			{
 				"buffer_size": 980,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "imports/ui/components/AddBookmarkForm.jsx",
+			"settings":
+			{
+				"buffer_size": 1668,
 				"line_ending": "Windows"
 			}
 		},
@@ -528,7 +544,7 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -556,7 +572,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -565,15 +581,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1592,
+						"buffer_size": 1640,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1148,
-								1148
+								993,
+								993
 							]
 						],
 						"settings":
@@ -582,7 +598,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 198.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -590,19 +606,47 @@
 				},
 				{
 					"buffer": 2,
-					"file": "imports/ui/components/Sidebar.jsx",
+					"file": ".meteor/packages",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1166,
+						"buffer_size": 1044,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								848,
-								848
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "imports/ui/components/Sidebar.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1162,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								477,
+								477
 							]
 						],
 						"settings":
@@ -619,7 +663,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "imports/ui/components/SearchBar.jsx",
 					"semi_transient": false,
 					"settings":
@@ -631,8 +675,8 @@
 						"selection":
 						[
 							[
-								1030,
-								1030
+								1034,
+								1034
 							]
 						],
 						"settings":
@@ -645,11 +689,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "imports/ui/components/Card.jsx",
 					"semi_transient": false,
 					"settings":
@@ -672,14 +716,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 198.0,
+						"translation.y": 164.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "imports/ui/components/Cards.jsx",
 					"semi_transient": false,
 					"settings":
@@ -705,11 +749,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "server/restapi.js",
 					"semi_transient": false,
 					"settings":
@@ -721,8 +765,8 @@
 						"selection":
 						[
 							[
-								173,
-								173
+								980,
+								980
 							]
 						],
 						"settings":
@@ -735,11 +779,40 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 8,
+					"file": "imports/ui/components/AddBookmarkForm.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1668,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
 					"file": "imports/api/bookmarks.js",
 					"semi_transient": false,
 					"settings":
@@ -765,7 +838,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				}
 			]

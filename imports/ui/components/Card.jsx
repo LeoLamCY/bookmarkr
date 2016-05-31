@@ -32,7 +32,7 @@ export default class Card extends Component {
                     <div className="header">
                         { this.props.bookmark.title }
                     </div>
-                    <div className="description">
+                    <div className="description url">
                         <p>{this.props.bookmark.url}</p>
                     </div>
                     <TagLabels tagsArray={this.props.bookmark.tagsArray} onTagClick={this.props.onTagClick}/>
