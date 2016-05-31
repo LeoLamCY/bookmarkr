@@ -5,13 +5,22 @@
     	&:hover{ color:#b31b1b; }
 	}
 
-	.card > .content {
-		display:flex;
-    flex-direction:column;
-	}
-
-  .content .description {
+  > .content {
+    &:first-child {
+  		display:flex;
+      flex-direction:column;
+      background-color:red;
+    }
+  }
+	
+  .content .url {
       margin-bottom: 15px;
+      
+      p {
+        overflow:hidden;
+        text-overflow: ellipsis;
+        white-space:nowrap;
+      }
   }
 
 	.click-zone {
