@@ -35,7 +35,7 @@ export default class App extends React.Component {
 
 	render() {
 		// var formSuccessClass = classNames({
-		// 	'ui': true,
+		// 	'ui': true
 		// 	'form': true,
 		// 	'success': this.state.submitSuccess,
 		// });
