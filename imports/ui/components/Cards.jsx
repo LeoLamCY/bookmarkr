@@ -1,9 +1,13 @@
 import React, { Component, PropTypes } from 'react';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import Card from './Card.jsx';
 
 export default class Cards extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            items:["test", "test2"]
+        }
     }
 
     renderCards() {
@@ -25,7 +29,9 @@ export default class Cards extends Component {
     render() {
         return(
             <div className="ui cards">
-                {this.renderCards()}
+                <ReactCSSTransitionGroup transitionName="card-transition" transitionEnterTimeout={500} transitionLeaveTimeout={300}>
+                    {this.renderCards()}
+                </ReactCSSTransitionGroup>
             </div>
         );
     }
