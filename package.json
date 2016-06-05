@@ -12,6 +12,7 @@
     "react-addons-pure-render-mixin": "^15.0.2",
     "react-addons-transition-group": "^15.1.0",
     "react-dom": "^15.1.0",
+    "react-masonry-component": "^4.0.4",
     "react-router": "^2.4.0"
   }
 }

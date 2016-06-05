@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import Masonry from 'react-masonry-component';
 import Card from './Card.jsx';
 
 export default class Cards extends Component {
@@ -27,12 +28,17 @@ export default class Cards extends Component {
     }
 
     render() {
+        var masonryOptions = {
+            transitionDuration: "0.4s"
+        };
         return(
-            <div className="ui cards">
-                <ReactCSSTransitionGroup transitionName="card-transition" transitionEnterTimeout={500} transitionLeaveTimeout={300}>
+                <Masonry
+                className={'ui cards'}
+                elementType={'div'}
+                options={masonryOptions} 
+                disableImagesLoaded={false}>
                     {this.renderCards()}
-                </ReactCSSTransitionGroup>
-            </div>
+                </Masonry>
         );
     }
 }
