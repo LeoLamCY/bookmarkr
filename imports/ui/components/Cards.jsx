@@ -1,14 +1,10 @@
 import React, { Component, PropTypes } from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import Masonry from 'react-masonry-component';
 import Card from './Card.jsx';
 
 export default class Cards extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            items:["test", "test2"]
-        }
     }
 
     renderCards() {
@@ -35,7 +31,7 @@ export default class Cards extends Component {
                 <Masonry
                 className={'ui cards'}
                 elementType={'div'}
-                options={masonryOptions} 
+                options={masonryOptions}
                 disableImagesLoaded={false}>
                     {this.renderCards()}
                 </Masonry>
