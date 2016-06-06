@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import Masonry from 'react-masonry-component';
 import Card from './Card.jsx';
 
 export default class Cards extends Component {
@@ -23,10 +24,17 @@ export default class Cards extends Component {
     }
 
     render() {
+        var masonryOptions = {
+            transitionDuration: "0.4s"
+        };
         return(
-            <div className="ui cards">
-                {this.renderCards()}
-            </div>
+                <Masonry
+                className={'ui cards'}
+                elementType={'div'}
+                options={masonryOptions}
+                disableImagesLoaded={false}>
+                    {this.renderCards()}
+                </Masonry>
         );
     }
 }

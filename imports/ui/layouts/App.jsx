@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component, PropTypes} from 'react';
 //import { Link } from 'react-router';
 //import classNames from 'classnames';
 
@@ -33,8 +33,7 @@ export default class App extends React.Component {
 		});
 	}
 
-	render() {
-		// var formSuccessClass = classNames({
+	render() {		// var formSuccessClass = classNames({
 		// 	'ui': true
 		// 	'form': true,
 		// 	'success': this.state.submitSuccess,

@@ -23,7 +23,7 @@ export default class Card extends Component {
 
     render() {
         return(
-            <div className="ui card hvr-underline-reveal">
+            <div className="ui card hvr-underline-reveal link" id="card-trans">
                 <div className="content">
                     <a href={ this.props.bookmark.url }
                         data-content={ this.props.bookmark.title }
