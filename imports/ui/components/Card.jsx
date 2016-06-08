@@ -14,16 +14,12 @@ export default class Card extends Component {
     }
 
     componentDidMount() {
-        $('.content a').popup({
-            delay: {
-                show: 800
-            }
-        });
+        
     }
 
     render() {
         return(
-            <div className="ui card hvr-underline-reveal link" id="card-trans">
+            <div className="ui card link" id="card-trans">
                 <div className="content">
                     <a href={ this.props.bookmark.url }
                         data-content={ this.props.bookmark.title }

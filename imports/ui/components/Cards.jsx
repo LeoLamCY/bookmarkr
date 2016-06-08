@@ -23,6 +23,14 @@ export default class Cards extends Component {
         });
     }
 
+    componentDidUpdate() {
+        $('.content a').popup({
+            delay: {
+                show: 800
+            }
+        });
+    }
+
     render() {
         var masonryOptions = {
             transitionDuration: "0.4s"
