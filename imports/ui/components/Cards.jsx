@@ -5,10 +5,14 @@ import Card from './Card.jsx';
 export default class Cards extends Component {
     constructor(props) {
         super(props);
+
+        this.state = {
+            currBookmarkNumber: 4
+        };
     }
 
     renderCards() {
-        let filteredBookmarks = this.props.bookmarks;
+        let filteredBookmarks = this.props.bookmarks.slice(0, this.state.currBookmarkNumber);
 
         if(this.props.selectedTags && this.props.selectedTags[0] !== "") {
             filteredBookmarks = filteredBookmarks.filter( bookmark => {
@@ -27,6 +31,15 @@ export default class Cards extends Component {
         $('.content a').popup({
             delay: {
                 show: 800
+            }
+        });
+    }
+
+    componentDidMount() {
+        $(window).scroll( () => {
+            if ($(window).scrollTop() == $(document).height() - $(window).height()){
+                console.log("test");
+                this.setState({ currBookmarkNumber: this.state.currBookmarkNumber += 2});
             }
         });
     }
