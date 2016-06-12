@@ -12,12 +12,13 @@ export default class SearchBar extends Component {
 
     componentDidMount() {
         $(".search.dropdown").dropdown({
-            showOnFocus: false,
+            showOnFocus: true,
             fullTextSearch: true,
             onChange: (value, text, $selectedItem) => {
                 this.setState({tags: value}, () =>
                     this.props.onSearchBarChange(this.state.tags)
                 );
+                $(".search.dropdown").dropdown("hide");
             },
             onRemove: (removedValue, removedText, $removedChoice) => {
                 this.setState({lastRemovedTag: removedValue});

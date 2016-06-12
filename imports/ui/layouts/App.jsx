@@ -29,11 +29,7 @@ export default class App extends React.Component {
 		});
 	}
 
-	render() {		// var formSuccessClass = classNames({
-		// 	'ui': true
-		// 	'form': true,
-		// 	'success': this.state.submitSuccess,
-		// });
+	render() {
 		return (
 			<div className="wrapper">
 				<SidebarContainer onTagClick={this.onTagClick}/>

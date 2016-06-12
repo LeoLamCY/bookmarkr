@@ -7,7 +7,7 @@ export default class Cards extends Component {
         super(props);
 
         this.state = {
-            currBookmarkNumber: 4
+            currBookmarkNumber: 25
         };
     }
 
@@ -39,7 +39,7 @@ export default class Cards extends Component {
         $(window).scroll( () => {
             if ($(window).scrollTop() == $(document).height() - $(window).height()){
                 console.log("test");
-                this.setState({ currBookmarkNumber: this.state.currBookmarkNumber += 2});
+                this.setState({ currBookmarkNumber: this.state.currBookmarkNumber += 25});
             }
         });
     }
