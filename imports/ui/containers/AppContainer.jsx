@@ -10,18 +10,19 @@ export default createContainer(( {params: { selectedTags }} ) => {
     Meteor.subscribe('bookmarks');
 
     var bookmarks = Bookmarks.find({}, {sort: {created: -1}}).fetch();
+    var tags = Tags.find({}, {sort: {name: 1}}).fetch();
 
     if(selectedTags) {
         return {
             bookmarks: bookmarks,
-            tags: Tags.find().fetch(),
+            tags: tags,
             selectedTags: selectedTags.trim(),
         };
     }
     else {
         return {
             bookmarks: bookmarks,
-            tags: Tags.find().fetch(),
+            tags: tags,
         };
     }
 

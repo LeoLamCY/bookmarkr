@@ -14,16 +14,6 @@ Meteor.methods({
     'tags.insert'(name) {
         check(name, String);
         Tags.upsert({name: name}, {$inc: { count: 1}});
-
-        // if(Tags.find({name: name}).fetch().length == 0) {
-        //     Tags.insert({
-        //         name: name,
-        //         count: 0,
-        //     });
-        // }
-        // else {
-        //     Tags.update({name: name}, {$inc: {count: 1}});
-        // }
     },
     'tags.remove'(names) {
         check(names, [String]);

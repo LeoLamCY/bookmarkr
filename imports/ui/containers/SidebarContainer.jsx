@@ -7,6 +7,6 @@ import { Tags } from '/imports/api/tags.js';
 export default createContainer(() => {
     Meteor.subscribe('tags');
     return {
-        tags: Tags.find().fetch(),
+        tags: Tags.find({}, {sort: {name: 1}}).fetch(),
     };
 }, Sidebar);
