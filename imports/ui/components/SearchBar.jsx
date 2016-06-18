@@ -5,9 +5,11 @@ export default class SearchBar extends Component {
         super(props);
         this.state = {
             tags: "",
-            lastAddedTag: "",
-            lastRemovedTag: "",
         }
+    }
+
+    onTagClick(tag) {
+        $(".search.dropdown").dropdown('set exactly', tag);
     }
 
     componentDidMount() {
@@ -15,28 +17,17 @@ export default class SearchBar extends Component {
             showOnFocus: true,
             fullTextSearch: true,
             onChange: (value, text, $selectedItem) => {
+                // console.log("-------------");
+                // console.log("value:" + value);
+                // console.log("text:" + text);
+                // console.log("selectedItem:" + $selectedItem);
+                // console.log("-------------");
                 this.setState({tags: value}, () =>
                     this.props.onSearchBarChange(this.state.tags)
                 );
                 $(".search.dropdown").dropdown("hide");
-            },
-            onRemove: (removedValue, removedText, $removedChoice) => {
-                this.setState({lastRemovedTag: removedValue});
-            },
+            }
         }).bind(this);
-    }
-
-    componentWillReceiveProps(newProps) {
-        // console.log("clickedTag: " + newProps.clickedTag);
-        // console.log("lastAdded: " + this.state.lastAddedTag);
-        // console.log("lastRemoved: " + this.state.lastRemovedTag);
-        // console.log("------------------ ");
-        if(newProps.clickedTag != this.state.lastAddedTag || newProps.clickedTag == this.state.lastRemovedTag) {
-            this.setState({lastAddedTag: newProps.clickedTag}, () =>
-                $(".search.dropdown").dropdown('set selected', newProps.clickedTag)
-            );
-
-        }
     }
 
     renderTagMenu() {
@@ -64,5 +55,4 @@ export default class SearchBar extends Component {
 SearchBar.propTypes = {
     onSearchBarChange: PropTypes.func.isRequired,
     allTags: PropTypes.array.isRequired,
-    clickedTag: PropTypes.string,
 };
