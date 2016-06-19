@@ -1,5 +1,5 @@
 Package.describe({
-    name: 'universe:accounts-ui',
+    name: 'universe:accounts-ui-modded',
     version: '0.3.1',
     summary: 'Accounts UI replacement for Universe using React and Semantic UI',
     documentation: 'README.md',
