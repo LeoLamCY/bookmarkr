@@ -10,7 +10,7 @@ export default class Card extends Component {
 
     onRemoveClick(event) {
         event.preventDefault();
-        Meteor.call('bookmarks.remove', this.props.bookmark._id, this.props.bookmark.tagsArray);
+        Meteor.call('bookmarks.remove', this.props.bookmark._id, this.props.bookmark.tagsArray, Meteor.userId());
     }
 
     componentDidMount() {

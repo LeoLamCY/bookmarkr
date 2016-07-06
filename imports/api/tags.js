@@ -11,14 +11,16 @@ if (Meteor.isServer) {
 }
 
 Meteor.methods({
-    'tags.insert'(name) {
+    'tags.insert'(name, userId) {
         check(name, String);
-        Tags.upsert({name: name}, {$inc: { count: 1}});
+        check(userId, String);
+
+        Tags.upsert({name: name, userId: userId}, {$inc: { count: 1}});
     },
-    'tags.remove'(names) {
+    'tags.remove'(names, userId) {
         check(names, [String]);
 
-        Tags.update({name: {$in:names}}, {$inc: {count: -1}}, {multi: true});
+        Tags.update({name: {$in:names}, userId: userId}, {$inc: {count: -1}}, {multi: true});
         Tags.remove({count: {$lte: 0}});
     },
 });

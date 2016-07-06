@@ -9,8 +9,8 @@ export default createContainer(( {params: { selectedTags }} ) => {
     Meteor.subscribe('tags');
     Meteor.subscribe('bookmarks');
 
-    var bookmarks = Bookmarks.find({}, {sort: {created: -1}}).fetch();
-    var tags = Tags.find({}, {sort: {name: 1}}).fetch();
+    var bookmarks = Bookmarks.find({userId: Meteor.userId()}, {sort: {created: -1}}).fetch();
+    var tags = Tags.find({userId: Meteor.userId()}, {sort: {name: 1}}).fetch();
 
     if(selectedTags) {
         return {

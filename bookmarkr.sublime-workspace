@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"react-",
+				"react-router	(Sidebar.jsx)"
+			],
+			[
 				"select",
 				"selectedTags"
 			],
@@ -80,10 +84,10 @@
 	"buffers":
 	[
 		{
-			"file": "client/main.js",
+			"file": "imports/ui/components/Card.jsx",
 			"settings":
 			{
-				"buffer_size": 230,
+				"buffer_size": 1982,
 				"line_ending": "Windows"
 			}
 		},
@@ -91,15 +95,15 @@
 			"file": "imports/ui/layouts/App.jsx",
 			"settings":
 			{
-				"buffer_size": 1640,
+				"buffer_size": 1505,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": ".meteor/packages",
+			"file": "client/main.html",
 			"settings":
 			{
-				"buffer_size": 1044,
+				"buffer_size": 79,
 				"line_ending": "Windows"
 			}
 		},
@@ -112,26 +116,10 @@
 			}
 		},
 		{
-			"file": "imports/ui/components/SearchBar.jsx",
+			"file": "packages/universe-accounts-ui/components/ComboBox.jsx",
 			"settings":
 			{
-				"buffer_size": 2099,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "imports/ui/components/Card.jsx",
-			"settings":
-			{
-				"buffer_size": 2074,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "imports/ui/components/Cards.jsx",
-			"settings":
-			{
-				"buffer_size": 1028,
+				"buffer_size": 2842,
 				"line_ending": "Windows"
 			}
 		},
@@ -139,23 +127,47 @@
 			"file": "server/restapi.js",
 			"settings":
 			{
-				"buffer_size": 980,
+				"buffer_size": 1054,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "imports/ui/components/AddBookmarkForm.jsx",
+			"file": "imports/ui/components/LoginForm.less",
 			"settings":
 			{
-				"buffer_size": 1668,
+				"buffer_size": 126,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "imports/api/bookmarks.js",
+			"file": "imports/ui/layouts/App.less",
 			"settings":
 			{
-				"buffer_size": 1264,
+				"buffer_size": 571,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "imports/ui/components/Cards.jsx",
+			"settings":
+			{
+				"buffer_size": 1870,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "imports/ui/components/Cards.less",
+			"settings":
+			{
+				"buffer_size": 353,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "imports/ui/components/Card.less",
+			"settings":
+			{
+				"buffer_size": 628,
 				"line_ending": "Windows"
 			}
 		}
@@ -334,44 +346,60 @@
 		"/P/Development/JS/meteor/bookmarkr",
 		"/P/Development/JS/meteor/bookmarkr/.meteor",
 		"/P/Development/JS/meteor/bookmarkr/client",
+		"/P/Development/JS/meteor/bookmarkr/client/lib",
 		"/P/Development/JS/meteor/bookmarkr/imports",
 		"/P/Development/JS/meteor/bookmarkr/imports/api",
 		"/P/Development/JS/meteor/bookmarkr/imports/startup",
 		"/P/Development/JS/meteor/bookmarkr/imports/startup/client",
-		"/P/Development/JS/meteor/bookmarkr/imports/startup/server",
 		"/P/Development/JS/meteor/bookmarkr/imports/ui",
 		"/P/Development/JS/meteor/bookmarkr/imports/ui/components",
 		"/P/Development/JS/meteor/bookmarkr/imports/ui/containers",
 		"/P/Development/JS/meteor/bookmarkr/imports/ui/layouts",
+		"/P/Development/JS/meteor/bookmarkr/packages",
+		"/P/Development/JS/meteor/bookmarkr/packages/universe-accounts-ui",
+		"/P/Development/JS/meteor/bookmarkr/packages/universe-accounts-ui/components",
 		"/P/Development/JS/meteor/bookmarkr/public",
-		"/P/Development/JS/meteor/bookmarkr/public/css",
-		"/P/Development/JS/meteor/bookmarkr/server"
+		"/P/Development/JS/meteor/bookmarkr/server",
+		"/P/Development/JS/meteor/bookmarkr/server/startup"
 	],
 	"file_history":
 	[
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/LoginForm.jsx",
+		"/P/Development/JS/meteor/bookmarkr/packages/jquery/package.js",
+		"/P/Development/JS/meteor/bookmarkr/packages/universe-accounts-ui/package.js",
+		"/P/Development/JS/meteor/bookmarkr/imports/startup/client/routes.jsx",
+		"/C/Users/kou.KOUGA/AppData/Local/.meteor/packages/universe_accounts-ui/0.3.1/os/components/ComboBox.jsx",
+		"/P/Development/JS/meteor/bookmarkr/.meteor/local/build/programs/web.browser/packages/universe_accounts-ui.js",
+		"/P/Development/JS/meteor/bookmarkr/client/main.less",
+		"/P/Development/JS/meteor/bookmarkr/client/main.js",
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/SearchBar.jsx",
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/RegisterForm.jsx",
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/containers/AppContainer.jsx",
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/layouts/App.less",
+		"/P/Development/JS/meteor/bookmarkr/imports/startup/client/accounts-config.js",
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/loginForm.jsx",
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/loginForm",
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/SearchBar.less",
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/AccountsUIWrapper.jsx",
+		"/P/Development/JS/meteor/bookmarkr/imports/startup/server/accounts-config.js",
+		"/P/Development/JS/meteor/bookmarkr/imports/api/bookmarks.js",
+		"/P/Development/JS/meteor/bookmarkr/imports/api/tags.js",
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/containers/SidebarContainer.jsx",
+		"/P/Development/JS/meteor/bookmarkr/mup.json",
+		"/C/Users/kou.KOUGA/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/TagLabels.less",
+		"/P/Development/JS/meteor/bookmarkr/.meteor/packages",
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/TagLabels.jsx",
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/Sidebar.jsx",
+		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/Sidebar.less",
+		"/P/Development/JS/meteor/bookmarkr/server/kadira.js",
 		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/AddBookmarkForm.jsx",
 		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/Footer.jsx",
-		"/P/Development/JS/meteor/bookmarkr/imports/ui/containers/AppContainer.jsx",
-		"/P/Development/JS/meteor/bookmarkr/imports/api/tags.js",
-		"/P/Development/JS/meteor/bookmarkr/imports/api/bookmarks.js",
-		"/P/Development/JS/meteor/bookmarkr/imports/ui/containers/SidebarContainer.jsx",
-		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/TagLabels.jsx",
 		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/Cards.jsx",
 		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/Card.jsx",
-		"/P/Development/JS/meteor/bookmarkr/.meteor/packages",
 		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/Footer.less",
 		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/Card.less",
-		"/P/Development/JS/meteor/bookmarkr/imports/startup/client/routes.jsx",
-		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/Sidebar.jsx",
-		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/SearchBar.less",
-		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/TagLabels.less",
-		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/SearchBar.jsx",
-		"/P/Development/JS/meteor/bookmarkr/client/main.less",
-		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/Sidebar.less",
-		"/P/Development/JS/meteor/bookmarkr/imports/ui/layouts/App.less",
-		"/C/Users/kou.KOUGA/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/P/Development/JS/meteor/todos/imports/api/lists/lists.js",
-		"/P/Development/JS/meteor/bookmarkr/client/main.js",
 		"/P/Development/JS/meteor/bookmarkr/imports/ui/layouts/Footer.jsx",
 		"/P/Development/JS/meteor/bookmarkr/imports/ui/components/Cards.less",
 		"/C/Users/kou.KOUGA/AppData/Roaming/Sublime Text 3/Packages/User/JavaScript (Babel).sublime-settings",
@@ -475,6 +503,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			");\n",
+			")\n",
+			"title",
+			"options",
+			"APP_RELEASE",
+			"fetch",
+			"upgrade",
+			"add",
+			"1.3.2.4",
 			"');\n",
 			"intersection",
 			"\n    componentDidUpdate() {\n      $('.search.dropdown').dropdown('refresh');\n      \n      console.log(\"update\");\n    }",
@@ -541,38 +578,46 @@
 		"whole_word": false,
 		"wrap": true
 	},
+	"folders":
+	[
+		{
+			"path": "P:\\Development\\JS\\meteor\\bookmarkr"
+		}
+	],
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "client/main.js",
+					"file": "imports/ui/components/Card.jsx",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 230,
+						"buffer_size": 1982,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								225,
-								225
+								1940,
+								1950
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -581,15 +626,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1640,
+						"buffer_size": 1505,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								993,
-								993
+								826,
+								826
 							]
 						],
 						"settings":
@@ -598,7 +643,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 198.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -606,30 +651,30 @@
 				},
 				{
 					"buffer": 2,
-					"file": ".meteor/packages",
+					"file": "client/main.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1044,
+						"buffer_size": 79,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								32,
+								32
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -645,128 +690,8 @@
 						"selection":
 						[
 							[
-								477,
-								477
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "imports/ui/components/SearchBar.jsx",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2099,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1034,
-								1034
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "imports/ui/components/Card.jsx",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2074,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2070,
-								2032
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 164.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "imports/ui/components/Cards.jsx",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1028,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								932,
-								932
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "server/restapi.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 980,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								980,
-								980
+								966,
+								966
 							]
 						],
 						"settings":
@@ -783,49 +708,50 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "imports/ui/components/AddBookmarkForm.jsx",
+					"buffer": 4,
+					"file": "packages/universe-accounts-ui/components/ComboBox.jsx",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1668,
+						"buffer_size": 2842,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1842,
+								1842
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 594.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "imports/api/bookmarks.js",
+					"buffer": 5,
+					"file": "server/restapi.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1264,
+						"buffer_size": 1054,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								39,
+								39
 							]
 						],
 						"settings":
@@ -838,7 +764,154 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "imports/ui/components/LoginForm.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 126,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								108,
+								108
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/Seti_UI/icons/Langs/Less.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "imports/ui/layouts/App.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 571,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								283,
+								283
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Seti_UI/icons/Langs/Less.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "imports/ui/components/Cards.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1870,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								848,
+								858
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "imports/ui/components/Cards.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 353,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								46,
+								46
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Seti_UI/icons/Langs/Less.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "imports/ui/components/Card.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 628,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								602,
+								602
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Seti_UI/icons/Langs/Less.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
 					"type": "text"
 				}
 			]
@@ -846,7 +919,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 70.0
+		"height": 28.0
 	},
 	"input":
 	{
@@ -884,7 +957,7 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "Django",
-	"project": "bookmarkr.sublime-project",
+	"project": "",
 	"replace":
 	{
 		"height": 52.0

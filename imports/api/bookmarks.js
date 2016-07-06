@@ -13,20 +13,25 @@ if (Meteor.isServer) {
 }
 
 Meteor.methods({
-    'bookmarks.insert'(title, url, tags) {
+    'bookmarks.insert'(title, url, tags, userId) {
         check(title, String);
         check(url, String);
         check(tags, String);
+        check(userId, String);
 
         const tagsArray = tags.split(/,\s*/);
         const date = moment().toDate();
+
+        if(!Meteor.users.findOne({ _id: userId })) {
+            throw new Meteor.Error(403, "user does not exist!");
+        }
 
         if(!url.startsWith("http://") && !url.startsWith("https://")) {
             url = "http://" + url;
         }
 
         tagsArray.map( (name) => {
-            Meteor.call('tags.insert', name);
+            Meteor.call('tags.insert', name, userId);
         });
 
         Bookmarks.insert({
@@ -34,15 +39,17 @@ Meteor.methods({
             url,
             tagsArray,
             created: date,
+            userId,
         }, (err, id) => {
             // id == null ? this.setState({'submitSuccess': false}) : this.setState({'submitSuccess': true});
         });
     },
-    'bookmarks.remove'(id, tagsArray) {
+    'bookmarks.remove'(id, tagsArray, userId) {
         check(id, String);
         check(tagsArray, [String]);
+        check(userId, String);
 
-        Meteor.call('tags.remove', tagsArray);
+        Meteor.call('tags.remove', tagsArray, userId);
         Bookmarks.remove(id);
     },
 });
